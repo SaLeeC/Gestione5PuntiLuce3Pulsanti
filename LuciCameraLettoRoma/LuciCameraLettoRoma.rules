@@ -11,7 +11,7 @@
     (via_costs 50)
     (plane_via_costs 5)
     (start_ripup_costs 100)
-    (start_pass_no 2151)
+    (start_pass_no 1953)
     (layer_rule F.Cu
       (active on)
       (preferred_direction vertical)
@@ -26,15 +26,15 @@
     )
   )
   (rule
-    (width 250.0)
+    (width 200.0)
     (clear 200.2)
-    (clear 125.0 (type smd_to_turn_gap))
-    (clear 2000.2 (type default_240VAC))
+    (clear 100.0 (type smd_to_turn_gap))
+    (clear 1000.2 (type default_240VAC))
     (clear 50.0 (type smd_smd))
-    (clear 2000.2 (type smd_240VAC))
-    (clear 2000.2 (type "kicad_default"_240VAC))
-    (clear 2000.2 (type 240VAC_240VAC))
-    (clear 2000.2 (type 240VAC_Power))
+    (clear 1000.2 (type smd_240VAC))
+    (clear 1000.2 (type "kicad_default"_240VAC))
+    (clear 1000.2 (type 240VAC_240VAC))
+    (clear 1000.2 (type 240VAC_Power))
   )
   (padstack "Via[0-1]_800:400_um"
     (shape
@@ -70,51 +70,50 @@
     Power "Via[0-1]_800:400_um-Power"
   )
   (class default
+    "Net-(C2-Pad2)" "/Luci Camera Letto Roma CPU/Xtal1" "/Luci Camera Letto Roma CPU/Xtal2" "Net-(C3-Pad2)" "Net-(C6-Pad2)" "/Luci Camera Letto Roma CPU/A5-I2C-SCL" "/Luci Camera Letto Roma CPU/Reset" "/Luci Camera Letto Roma CPU/A4-I2C-SDA"
+    "Net-(D2-Pad1)" "/Luci Camera Letto Roma CPU/A3" "/Luci Camera Letto Roma CPU/A2" "/Luci Camera Letto Roma CPU/A1" "/Luci Camera Letto Roma CPU/A0" "/Luci Camera Letto Roma CPU/IO10-SS" "unconnected-(K1-Pad4)" "/Luci Camera Letto Roma CPU/DTR"
+    "Net-(D2-Pad2)" "/Luci Camera Letto Roma CPU/ICSP-SCK" "/Luci Camera Letto Roma CPU/ICSP-MISO" "/Luci Camera Letto Roma CPU/ICSP-MOSI" "Net-(J1-Pad2)" "unconnected-(K2-Pad4)" "unconnected-(K3-Pad4)" "unconnected-(K4-Pad4)"
+    "unconnected-(K5-Pad4)" "Net-(D1-Pad2)" "Net-(D3-Pad2)" "Net-(D3-Pad1)" "Net-(D4-Pad2)" "Net-(D4-Pad1)" "Net-(D5-Pad2)" "Net-(D5-Pad1)"
+    "Net-(D6-Pad2)" "Net-(D6-Pad1)" "Net-(D7-Pad2)" "Net-(D7-Pad1)" "Net-(D8-Pad2)" "Net-(D8-Pad1)" "Net-(D9-Pad2)" "Net-(D9-Pad1)"
+    "unconnected-(Power-Reset1-Pad3)" "/Luci Camera Letto Roma CPU/Rx" "/Luci Camera Letto Roma CPU/Tx" "/Luci Camera Letto Roma - Input/Pulsante1-IO" "/Luci Camera Letto Roma - Input/Pulsante2-IO" "/Luci Camera Letto Roma - Input/Pusante3-IO" "/Luci Camera Letto Roma - Rele/Rele-IO2" "/Luci Camera Letto Roma - Rele/Rele-IO3"
+    "/Luci Camera Letto Roma - Rele/Rele-IO4" "/Luci Camera Letto Roma - Rele/Rele-IO5" "/Luci Camera Letto Roma - Rele/Rele-IO6" "unconnected-(U5-Pad21)" "Net-(J1-Pad3)" "Net-(J1-Pad4)"
     (clearance_class default)
     (via_rule default)
     (rule
-      (width 250.0)
+      (width 200.0)
     )
     (circuit 
       (use_layer F.Cu B.Cu)
     )
   )
   (class "kicad_default"
-    "Net-(C1-Pad2)" GND "/Luci Camera Letto Roma CPU/Xtal1" "/Luci Camera Letto Roma CPU/Xtal2" "/Luci Camera Letto Roma CPU/-1*Reset" "Net-(C5-Pad2)" +5V "/Luci Camera Letto Roma CPU/A5-I2C-SCL"
-    "/Luci Camera Letto Roma CPU/IO8" "/Luci Camera Letto Roma CPU/A4-I2C-SDA" "/Luci Camera Letto Roma CPU/IO7" "/Luci Camera Letto Roma CPU/A3" "/Luci Camera Letto Roma CPU/IO6" "/Luci Camera Letto Roma CPU/A2" "/Luci Camera Letto Roma CPU/IO5" "/Luci Camera Letto Roma CPU/A1"
-    "/Luci Camera Letto Roma CPU/A0" "Net-(U1-Pad21)" "/Luci Camera Letto Roma CPU/IO4" "/Luci Camera Letto Roma CPU/IO3" "/Luci Camera Letto Roma CPU/IO2" "/Luci Camera Letto Roma CPU/IO1-RS232-TX" "/Luci Camera Letto Roma CPU/IO10-SS" "/Luci Camera Letto Roma CPU/IO0-RS232-RX"
-    "/Luci Camera Letto Roma CPU/IO9" "Net-(C4-Pad2)" "/Luci Camera Letto Roma CPU/DTR" "Net-(D2-Pad2)" "/Luci Camera Letto Roma CPU/ICSP-SCK" "/Luci Camera Letto Roma CPU/ICSP-MISO" "/Luci Camera Letto Roma CPU/ICSP-MOSI" +5VD
-    "Net-(PS1-Pad3)" GNDD "Net-(J4-Pad2)" "Net-(J5-Pad2)" "Net-(J6-Pad2)" "Net-(Power-Reset1-Pad3)" "Net-(D1-Pad2)" "Net-(D1-Pad1)"
-    "Net-(D3-Pad2)" "Net-(D3-Pad1)" "Net-(D4-Pad2)" "Net-(D4-Pad1)" "Net-(D5-Pad2)" "Net-(D5-Pad1)" "Net-(D6-Pad2)" "Net-(D6-Pad1)"
-    "Net-(D7-Pad2)" "Net-(D7-Pad1)" "Net-(D8-Pad2)" "Net-(D8-Pad1)" "Net-(D9-Pad2)" "Net-(D9-Pad1)"
     (clearance_class "kicad_default")
     (via_rule kicad_default)
     (rule
-      (width 250.0)
+      (width 200.0)
     )
     (circuit 
       (use_layer F.Cu B.Cu)
     )
   )
   (class 240VAC
-    "Net-(K1-Pad12)" "Net-(K1-Pad22)" "Net-(K1-Pad11)" "Net-(K2-Pad12)" "Net-(K2-Pad22)" "Net-(K2-Pad11)" "Net-(K3-Pad12)" "Net-(K3-Pad22)"
-    "Net-(K3-Pad11)" "Net-(K4-Pad12)" "Net-(K4-Pad22)" "Net-(K4-Pad11)" "Net-(K5-Pad12)" "Net-(K5-Pad22)" "Net-(K5-Pad11)" "Net-(J1-Pad3)"
-    "Net-(J1-Pad2)" "Net-(J1-Pad1)" "Net-(J1-Pad4)" "Net-(J2-Pad4)" "Net-(J2-Pad3)" "Net-(J2-Pad2)" "Net-(J2-Pad1)" "Net-(J3-Pad4)"
-    "Net-(J3-Pad3)" "Net-(J3-Pad2)" "Net-(J3-Pad1)"
+    "Net-(J2-Pad2)" "Net-(J3-Pad2)" "Net-(J2-Pad1)" "Net-(J2-Pad3)" "Net-(J2-Pad4)" "Net-(J2-Pad9)" "Net-(J2-Pad10)" "Net-(J3-Pad1)"
+    "Net-(K3-Pad1)" "Net-(K3-Pad3)" "Net-(K4-Pad1)" "Net-(K4-Pad3)"
     (clearance_class 240VAC)
     (via_rule 240VAC)
     (rule
-      (width 1500.0)
+      (width 800.0)
     )
     (circuit 
       (use_layer F.Cu B.Cu)
     )
   )
   (class Power
+    GND +5V +5VD GNDD
     (clearance_class Power)
     (via_rule Power)
     (rule
-      (width 400.0)
+      (width 300.0)
     )
     (circuit 
       (use_layer F.Cu B.Cu)
